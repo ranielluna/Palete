@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/css_dados/Style.css">
+  <title>Dados</title>
+</head>
+
+<body>
+  <header class="container">
+    <nav id="nav-primary">
+      <a href="/"><img src="../img/icons/novalogo-removebg-preview 2.svg" alt=""></a>
+      <div id="pesquisa-div">
+        <input type="text" id="pesquisa-input">
+        <button id="pesquisa-button">Pesquisar</button>
+      </div>
+      <div id="buttons-div">
+        <button id="profile-button">
+          <img src="../img/icons/icon.png" alt="">
+          <span>olá fulano</span>
+        </button>
+        <button id="car-button">
+          <img id="car-bag" width="40" height="40" src="../img/icons/PaperBag.svg" alt="">
+          <span id="car-number">3</span>
+          <span>Meu carrinho</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <nav id="breadcrumb">
+      <img src="../css/img/Home Page.png" alt="">
+      <img src="../img/icons/Left.png" alt="">
+      <a href="">Produtos</a>
+      <img src="../img/icons/Left.png" alt="">
+      <a href="">Ver Produto</a>
+      <img src="../img/icons/Left.png" alt="">
+      <a href="">Carrinho</a>
+    </nav>
+    <h1 class="title">Confirma Compra</h1>
+    <section id="register-section">
+
+      <div class="register-card-bg">
+        <h2 class="card-subtitle">Cadastro</h2>
+        <div class="register-card">
+          <div class="card-first-side">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Cpf">
+            <input type="text" placeholder="E-mail">
+          </div>
+          <div class="card-second-side">
+            <input type="text" placeholder="Sobrenome">
+            <input type="text" placeholder="Fone">
+            <input type="text" placeholder="Senha">
+            <ul>
+              <li>Minimo de 8 digitos</li>
+              <li>1 letra maiuscula</li>
+              <li>1 letra minúscula</li>
+            </ul>
+          </div>
+          <p>Ao criar uma conta, você concorda com os <a href="./">Termos e Condições de Uso</a> da Palete. Para saber como Tratamos os seus dados pessoais, acesse o nosso <a href="./">Aviso de Privacidade</a>.</p>
+        </div>
+        <div class="buttons-div">
+          <button class="save-button">Salvar</button>
+          <button class="cancel-button">Cancelar</button>
+        </div>
+      </div>
+
+      <div class="register-card-bg">
+        <h2 class="card-subtitle">Endereço</h2>
+        <div class="register-card">
+          <div class="card-first-side">
+            <input type="text" placeholder="CEP">
+            <input type="text" placeholder="Bairro">
+            <input type="text" placeholder="Complemento">
+            <input type="text" placeholder="Destinatário">
+            <label for="check" id="check-label">
+              <input type="checkbox" id="check">
+              Endereço principal
+            </label>
+          </div>
+          <div class="card-second-side">
+            <input type="text" placeholder="Cidade">
+            <input type="text" placeholder="Número">
+            <input type="text" placeholder="Ponto de Referencia">
+          </div>
+        </div>
+        <div class="buttons-div">
+          <button class="save-button">Salvar</button>
+          <button class="cancel-button">Cancelar</button>
+        </div>
+      </div>
+
+      <div class="register-card-bg">
+        <h2 class="card-subtitle">Pagamento</h2>
+        <div id="payment-options">
+          <button id="selected-option" class="option">Pix</button>
+          <button class="option">Cartão de Crédito</button>
+          <button class="option">Boleto</button>
+        </div>
+        <div id="payment-card">
+          <p>1.Ao Finalizar o pedido, um código Pix será gerado.</p>
+          <p>2.O pagamento deve ser feito no aplicativo do seu banco.</p>
+          <p>3.Pronto, depois é só acompanhar a o seu Pedido.</p>
+        </div>
+        <button id="final-button">Finalizar Pedido</button>
+
+    </section>
+  </main>
+  <footer id="footer-bg">
+    <div class="container" id="footer-content">
+      <div id="footer-brand">
+        <a href="./"><img src="../img/icons/logo.svg" alt=""></a>
+        <span>Palete</span>
+      </div>
+      <div id="footer-info">
+        <div id="footer-info-div">
+          <div id="footer-links">
+            <a href="/">BLOG</a>
+            <a href="/">SOBRE</a>
+            <a href="/">SAIBA MAIS</a>
+            <a href="/">CONTATO</a>
+          </div>
+          <div id="footer-social">
+            <a href="./"><img src="../img/icons/instagram.png" alt=""></a>
+            <a href="./"><img src="../img/icons/facebook.png" alt=""></a>
+          </div>
+        </div>
+        <p id="footer-email">Palete@support.com</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/bootstrap5Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

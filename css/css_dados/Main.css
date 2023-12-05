@@ -1,0 +1,235 @@
+#breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  grid-column: 1/-1;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#breadcrumb a {
+  font-size: 1rem;
+  font-family: 'inter', sans-serif;
+  color: #000033;
+}
+
+#register-section {
+  display: grid;
+  gap: 100px;
+}
+
+.register-card-bg {
+  background-color: #0A0A42;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 60px 120px 60px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.card-subtitle {
+  font-family: 'inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.register-card {
+  align-self: center;
+  border: solid #ffffff 1px;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.register-card p {
+  grid-column: 1/-1;
+}
+
+.card-first-side, .card-second-side {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.card-first-side input, .card-second-side input {
+  padding: 28px 12px;
+  font-size: 1.5rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  color: #888888;
+  background-color: #0A0A42;
+  border: solid #ffffff 1px;
+  border-radius: 15px;
+  max-width: 100%;  
+}
+
+.card-second-side ul {
+  display: grid;
+  gap: 8px;
+  justify-content: center;
+}
+
+.card-second-side ul li {
+  font-size: 1.5rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.register-card p {
+  max-width: 932px;
+  justify-self: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.register-card p a {
+  color: #1D19EC;
+  text-decoration: underline;
+}
+
+.buttons-div {
+  margin-top: 28px;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 16px;
+}
+
+.save-button, .cancel-button {
+  width: 236px;
+  padding: 18px 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+.save-button {
+  color: #ffffff;
+  background-color: #6B1794;
+}
+
+.cancel-button {
+  color: #000000;
+  background-color: #FDE72F;
+}
+
+#check-label {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+#check-label input {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+#payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.option {
+  width: 236px;
+  background-color: #0A0A42;
+  border: solid #ffffff 1px;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 24px 0px;
+  cursor: pointer;
+}
+
+#selected-option {
+  border: none;
+  background-color: #9C1EBD;
+}
+
+#payment-card {
+  margin-top: 30px;
+  border: solid #ffffff 1px;
+  padding: 20px 20px 60px 20px;
+  border-radius: 15px;
+  display: grid;
+  gap: 20px;
+}
+
+#payment-card p{
+  font-size: 1rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  color: #888888;
+}
+
+#final-button {
+  margin-top: 28px;
+  margin-right: 50px;
+  align-self: flex-end;
+  width: 236px;
+  padding: 18px 0px;
+  background-color: #47CA18;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .register-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .register-card {
+    padding: 10px;
+  }
+
+  .register-card-bg {
+    padding: 20px 5px 60px 5px;
+  }
+  
+  .card-first-side input, .card-second-side input {
+    font-size: 1rem;
+  }
+  .buttons-div {
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #payment-options {
+    justify-content: center;
+  }
+
+  #final-button {
+    margin-right: 0;
+    align-self: center;
+  }
+
+}

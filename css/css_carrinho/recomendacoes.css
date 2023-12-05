@@ -1,0 +1,41 @@
+.produtos_recomendacoes{
+    display: flex;
+    margin-top: 8em;
+    justify-content: space-evenly;
+}
+h1 {
+    font-size: 2em;
+    color: #0A0A42;
+}
+.produtos_recomendacoes h3{
+    font-size: 1em;
+    text-align: center;
+}
+.produtos_recomendacoes .container{
+    gap: 0.4em;
+}
+.produtos_recomendacoes .container img{
+    padding: 0;
+    width: 8em;
+    height: 12em;
+    background-color: #fff;
+}
+.produtos_recomendacoes .comprar{
+    border: 0.2em solid;
+    background-color: #fff;
+}
+
+@media (max-width: 1070px) {
+    .produtos_recomendacoes .container img{
+        width: 6em;
+        height: 8em;
+    }
+    .produtos_recomendacoes h3{
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .produtos_recomendacoes .comprar{
+        
+        padding: 0.4em 0.7em;
+    }
+}

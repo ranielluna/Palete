@@ -1,0 +1,262 @@
+
+.inicio{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  margin: 4em;
+}
+.direcionamento{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.direcionamento a {
+  color: #000;
+}
+.inicio h3{
+  color: #003;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.resultado{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #003;
+  
+}
+
+@media (max-width: 1070px) {
+  .resultado h2{
+      font-size: 1.2em;
+  }
+  .resultado h3{
+      font-size: 0.8em;
+  }
+}
+
+
+
+/* aside */
+
+aside{
+  width: 100vw;
+  
+  margin-top: 4em;
+  
+}
+aside img{
+  width: 18em;
+  cursor: pointer;
+  animation: linear;
+  transition: 1s;
+}
+aside img:hover{
+  scale: 1.1;
+  transition: 1s;
+  animation: linear;
+}
+.container_scroll{
+  display: flex;
+  gap: 2em;
+  animation: scroll 3s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(calc(-20vw));
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@media (max-width: 1300px) {
+  @keyframes scroll {
+      0% {
+          transform: translateX(0);
+      }
+      50% {
+          transform: translateX(calc(-3em * 6 - 4 * 1em));
+      }
+      100% {
+          transform: translateX(0);
+      }
+  }
+}
+@media (max-width: 1070px) {
+  @keyframes scroll {
+      0% {
+          transform: translateX(0);
+      }
+      50% {
+          transform: translateX(calc(-15vw));
+      }
+      100% {
+          transform: translateX(0);
+      }
+  }
+  aside img{
+      width: 20%;
+  }
+}
+@media (max-width: 900px){
+  @keyframes scroll {
+      0% {
+          transform: translateX(0);
+      }
+      50% {
+          transform: translateX(calc(-15vw));
+      }
+      100% {
+          transform: translateX(0);
+      }
+  }
+}
+
+
+/* compras */
+
+.compras{
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+}
+.filtro{
+  display: flex;
+  position: sticky;
+  top: 4em;
+  height: fit-content;
+  flex-direction: column;
+  padding: 1em 1em;
+  background-color: #000033;
+  gap: 2em;
+  
+}
+.compras h1{
+  color: #fff;
+  margin: 0;
+  font-size: 1.8em;
+}
+.compras h2{
+  color: #fff;
+}
+.filtro form{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em;
+  color: #fff;
+  gap: 1em;
+}
+.filtro label{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  font-size: 1em;
+  margin-left: 2em;
+}
+.filtro input[type="checkbox"]{
+  -webkit-appearance: none;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 0.1em;
+  background-color: #fff;
+}
+.filtro input[type="checkbox"]:checked{
+  border: 0.2em solid rgb(0, 0, 0);
+  background-color: rgb(74, 74, 197);
+}
+.produtos{
+  width: 100%;
+}
+.produtos h1{
+  color: #000033;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+.grid{
+  display: grid;
+  row-gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+.container img{
+  width: 8em;
+  padding: 2em 1em;
+  border-radius: 0.6em;
+  
+}
+
+.container a{
+  text-decoration: none;
+}
+
+.container h3{
+  margin: 0;
+  font-size: 1em;
+  color: #000;
+}
+.ver{
+  margin-top: 15px;
+  width: 130px;
+  border: solid 3px #000033;
+  border-radius: 20px;
+  background-color: #000033;
+  color: #ffff;
+  transition: ease 0.3s;
+  text-align: center;
+}
+
+.ver:hover{
+  color: #000033;
+  background-color: #ffff;
+  font-weight: 600;
+  transform: scale(1.1);
+}
+.comprar{
+    margin-top: 5px;
+    width: 170px;
+    border: solid 3px #000033;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #ffff;
+    color: #000033;
+    transition: ease 0.3s;
+    text-align: center;
+}
+.comprar:hover{
+  color: #ffff;
+  background: #000033;
+  transform: scale(1.1);
+  
+}
+
+@media (max-width: 1300px) {
+  .grid{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1070px) {
+  .filtro form{
+      margin: 0;
+  }
+  .container a{
+      font-size: 0.8em;
+  }
+  .container img{
+      padding: 1em 0.1em;
+  }
+}
+@media (max-width: 900px) {
+  .grid{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}

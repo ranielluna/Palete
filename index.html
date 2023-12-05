@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/bootstrap5Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/css_produto/Style.css">
+  <link rel="stylesheet" href="./css/home.css">
+
+  <title>Palate-home</title>
+  <!-- Fav icon -->
+  <link rel="shortcut icon" href="./img/icons/novalogo-removebg-preview 2.svg" type="image/x-icon">
+
+</head>
+
+<body>
+  <header class="container">
+    <nav id="nav-primary">
+      <a href="/"><img src="./img/icons/novalogo-removebg-preview 2.svg" alt=""></a>
+      <div id="pesquisa-div">
+        <input type="text" id="pesquisa-input">
+        <button id="pesquisa-button">Pesquisar</button>
+      </div>
+      <div id="buttons-div">
+        <button id="profile-button">
+          <img src="./img/icons/icon.png" alt="">
+          <span>olá fulano</span>
+        </button>
+        <button id="car-button">
+          <img id="car-bag" width="40" height="40" src="../img/icons/PaperBag.svg" alt="">
+          <span id="car-number">3</span>
+          <span>Meu carrinho</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <nav id="nav-secondary">
+    <ul>
+      <li><a href="./pages/verProduto.html">Cachorro</a></li>
+      <li><a href="./pages/verProduto.html">Gatos</a></li>
+      <li><a href="./pages/verProduto.html">Filhotes</a></li>
+      <li><a href="./pages/verProduto.html">Combos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/destaque1.jpg" class="d-block w-100" alt="banner com cachorro filhote">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/destaque5.jpg" class="d-block w-100" alt="banner com gato filhote">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/destaque3.jpg" class="d-block w-100" alt="banner com cachorro adulto">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/destaque4.jpg" class="d-block w-100" alt="banner com gato adulto">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="categories-container">
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"><img src="./img/icons/racao-umida.png" alt="imagem ração"></a>
+        <span>Ração Úmida</span>
+      </div>
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"><img src="./img/icons/gato.png" alt="imagem gato"></a>
+        <span>Gato</span>
+      </div>
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"> <img src="./img/icons/filhote.png" alt="imagem filhote"></a>
+        <span>Filhote</span>
+      </div>
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"><img src="./img/icons/adulto.png" alt="imagem animais adultos"></a>
+        <span>Adulto</span>
+      </div>
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"><img src="./img/icons/idoso.png" alt="imagem animais idosos"></a>
+        <span>Idoso</span>
+      </div>
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"><img src="./img/icons/cachorro.png" alt="imagem cachorro"></a>
+        <span>Cachorro</span>
+      </div>
+      <div class="categories-item">
+        <a href="./pages/verProduto.html"><img src="./img/icons/racao-seca.png" alt="imagem ração seca"></a>
+        <span>Ração Seca</span>
+      </div>
+    </div>
+
+    <section>
+      <h1 class="des">Destaques</h1>
+      <div class="product-container">
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato/racaogato (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato/racaogato (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/filhote/racaofilhote (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro filhote 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (1) 3.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="pro">Produtos</h1>
+      <div class="product-container">
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (1) 3.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/filhote/racaofilhote (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro filhote 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato/racaogato (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/filhote/racaofilhote (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato filhote 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato/racaogato (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato/racaogato (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/filhote/racaofilhote (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro filhote 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/filhote/racaofilhote (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato filhote 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (1) 3.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/filhote/racaofilhote (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro filhote 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato//racaogato (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/cachorro/racaodog (2) 1.jpg" alt="Imagem da ração">
+          <span>Ração para cachorro adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./img/racao/gato/racaogato (1) 1.jpg" alt="Imagem da ração">
+          <span>Ração para gato adulto 15,8KG</span>
+          <a href="./pages/produto.html"><button id="btn-see-more">Ver mais</button></a>
+          <a href="./pages/telaPagamento.html"><button id="btn-buy-now">Comprar Agora</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer-bg">
+    <div class="container" id="footer-content">
+      <div id="footer-brand">
+        <a href="./"><img src="./img/icons/logo.svg" alt=""></a>
+        <span>Palete</span>
+      </div>
+      <div id="footer-info">
+        <div id="footer-info-div">
+          <div id="footer-links">
+            <a href="/">BLOG</a>
+            <a href="/">SOBRE</a>
+            <a href="/">SAIBA MAIS</a>
+            <a href="/">CONTATO</a>
+          </div>
+          <div id="footer-social">
+            <a href="./"><img src="./img/icons/image_53.svg" alt=""></a>
+            <a href="./"><img src="./img/icons/image_54.svg" alt=""></a>
+          </div>
+        </div>
+        <p id="footer-email">Palete@support.com</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/bootstrap5Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

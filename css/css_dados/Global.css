@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+img {
+ max-width: 100%;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: 'alata', sans-serif;
+  color: #000033;
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 3rem;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+}

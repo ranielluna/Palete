@@ -1,0 +1,119 @@
+.carrinho_pagamento{
+    display: grid;
+    gap: 1em;
+    margin-top: 5em;
+    grid-template-columns: repeat(2, 1fr);
+}
+.carrinho_pagamento h1{
+    position: absolute;
+    font-size: 2em;
+    color: #0A0A42;
+    margin-top: -2em;
+}
+.produto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.2fr;
+    width: 30em;
+    border-radius: 0.5em;
+    padding: 1em;
+    height: fit-content;
+    color: #fff;
+    flex-shrink: 0;
+    background-color: #0A0A42;
+}
+.produto div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.produ{
+    grid-row: span 2;
+    width: 10em;
+}
+.produto h4{
+    font-weight: lighter;
+}
+.produto p{
+    height: fit-content;
+    grid-column: span 3;
+}
+.lixeira{
+    align-self: flex-end;
+    justify-self: end;
+    margin-bottom: 2em;
+}
+
+.resumo{
+    display: flex;
+    gap: 0.5em;
+    border-radius: 0.5em;
+    flex-direction: column;
+    padding: 1em;
+    flex-shrink: 0;
+    color: #fff;
+    background-color: #0A0A42;
+}
+.resumo h2{
+    font-size: 1.1em;
+}
+.resumo div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resumo h4{
+    width: fit-content;
+    font-size: 0.6em;
+    text-align: end;
+}
+.resumo a {
+    font-weight: 900;
+    text-align: center;
+}
+.resumo .ir{
+    padding: 0.5em;
+    border-radius: 1em;
+    color: #000;
+    background-color: #FDE72F;
+}
+.resumo .escolher{
+    padding: 0.5em;
+    border-radius: 1em;
+    color: #fff;
+    background-color: #CC24E6;
+}
+hr{
+    width: 100%;
+}
+.resumo h3{
+    font-weight: lighter;
+}
+.resumo img{
+    width: 100%;
+}
+
+@media (max-width: 1070px) {
+    .carrinho_pagamento{
+        display: grid;
+        gap: 1em;
+        margin-top: 5em;
+        grid-template-columns: 1fr;
+    }
+    .produto{
+        width: 100%;
+    }
+    .resumo{
+        width: 100%;
+    }
+    .resumo h4{
+        font-size: 1.4em;
+    }
+    .resumo a {
+        align-self: center;
+        width: 70%;
+        font-weight: 600;
+        text-align: center;
+    }
+}

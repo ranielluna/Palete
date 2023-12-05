@@ -1,0 +1,10 @@
+@import url(./Global.css);
+@import url(./Header.css);
+@import url(./Product.css);
+@import url(./Recommendations.css);
+@import url(./Assessment.css);
+@import url(./Footer.css);
+
+a{
+  color:white;
+}

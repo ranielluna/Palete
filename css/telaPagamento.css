@@ -1,0 +1,36 @@
+.endereco {
+  margin-top: 4em;
+  background-color: #003;
+  color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.mudar{
+  background-color: #FDE72F;
+  color: #003;
+  padding: 0.9em;
+  border-radius: 0.9em;
+  margin-top:0.2em;
+}
+
+.mudar:hover{
+  font-weight: 600;
+  color: #000033;
+  background-color: #FDE72F;
+  transform: scale(1.05);
+}
+
+.informacoesProduto{
+  margin-top: 4em;
+  background-color: #003;
+  color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+}
+.informacoesProduto .descricao{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  text-align: left;
+  gap: -1em;
+}
